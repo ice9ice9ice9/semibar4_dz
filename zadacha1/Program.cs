@@ -9,5 +9,5 @@ int num1 = int.Parse(Console.ReadLine());
 int num2 = int.Parse(Console.ReadLine());
 
 {
-    Console.WriteLine("число A в степени B = " + Math.Pow(num1, num2));
+    Console.WriteLine($"число {num1} в степени {num2} = " + Math.Pow(num1, num2));
 }
