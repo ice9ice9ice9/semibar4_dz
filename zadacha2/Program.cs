@@ -6,14 +6,13 @@
 
 9012 -> 12 */
 
-Console.WriteLine("Введите число: "); 
-string num = Console.ReadLine();
-
-int count = num.Length;
-
-for (int i = 0; i < count; i++)
+Console.WriteLine("Введите число: ");
+int num = int.Parse(Console.ReadLine());
+int sum = 0;
+while (num > 0)
 {
-    Console.WriteLine(num[i]);
+    sum = sum + num % 10;
+    num = num / 10;
 }
-
+Console.WriteLine(sum);
 
